@@ -1,8 +1,8 @@
 ---
 layout: page
 title: "About"
-description: "《你是我的梦想》"
-header-img: "img/about-bg.jpg"
+description: "「^ ^」"
+header-img: "img/post-bg-rwd.jpg"
 multilingual: true
 ---
 
@@ -44,4 +44,24 @@ multilingual: true
     })();
 </script>
 <!-- disqus 公共JS代码 end -->
+{% endif %}
+
+{% if site.gitment %}
+<!-- gitment 评论框 start -->
+<div id="container"></div>
+<!-- gitment 评论框 end -->
+
+<!-- gitment 公共JS代码 start (一个网页只需插入一次) -->
+<script>
+var gitment = new Gitment({
+  owner: '{{site.gitment_owner}}',
+  repo: '{{site.gitment_repo}}',
+  oauth: {
+    client_id: '{{site.gitment_oauth.client_id}}',
+    client_secret: '{{site.gitment_oauth.client_secret}}',
+  },
+})
+gitment.render('container')
+</script>
+<!-- gitment 公共JS代码 end -->
 {% endif %}
