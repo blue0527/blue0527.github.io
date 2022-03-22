@@ -126,7 +126,7 @@ var gitalk = new Gitalk({
   clientSecret: '{{site.gitalk_oauth.client_secret}}',
   repo: '{{site.gitalk_repo}}',
   owner: '{{site.gitalk_owner}}',
-  admin: [''],
+  admin: ['{{site.gitalk_owner}}'],
   id: location.pathname,      // 请确保你的 location 连接小于 50 个字符，否则，插件会生成失败
   distractionFreeMode: false  // 专注模式
 })
