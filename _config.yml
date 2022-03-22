@@ -64,10 +64,10 @@ kramdown:
 # Netease settings
 # netease_comment: false
 
-gitment: true
-gitment_owner: blue0527
-gitment_repo: blue0527.github.io
-gitment_oauth:
+gitalk: true
+gitalk_owner: blue0527
+gitalk_repo: blue0527.github.io
+gitalk_oauth:
   client_id: 0582f72a606c1eabe44b
   client_secret: ed77f402a20301aeccf28ef63760ee88f5383e36
 
